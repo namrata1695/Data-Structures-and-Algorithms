@@ -1,3 +1,5 @@
+// Time complexity : O(n)
+
 import java.util.*;
 class Solution
 {
