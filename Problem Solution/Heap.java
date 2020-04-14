@@ -66,14 +66,14 @@ public class Heap {
 			System.out.print(heapArrayForDeleteMin[i] + " ");
 		}
 	}
-	public void deleteMin(int[] heapArrayForDeleteMin)
+	public void deleteMin(int[] heapArrayForDeleteMin) // Time complexity for delete min is O(logn)
 	{
 		heapArrayForDeleteMin[1] = heapArrayForDeleteMin[heapArrayForDeleteMin.length - 1];
 		heapArrayForDeleteMin[heapArrayForDeleteMin.length - 1] = 0;
 		
 		heapify(1, heapArrayForDeleteMin);
 	}
-	public void heapify(int i, int[] notAheapArray)
+	public void heapify(int i, int[] notAheapArray) // Time complexity for heapify is O(logn)
 	{
 		while(2*i <= notAheapArray.length)
 		{
