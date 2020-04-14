@@ -5,8 +5,8 @@ public class Heap {
 	{
 		int[] heapArray = new int[14];
 		//heap array starts with 1
-		heapArray[1]=11;					//      11
-		heapArray[2]=17;				//   17             13
+		heapArray[1]=11;			//      	11
+		heapArray[2]=17;			//   	17             13
 		heapArray[3]=13;			//  18       21      19    17
 		heapArray[4]=18;			//43  23   26  29   31
 		heapArray[5]=21;		          
@@ -43,8 +43,8 @@ public class Heap {
 		// -----------------------------------------------------------------
 
 		int[] heapArrayForDeleteMin = new int[15];
-		heapArrayForDeleteMin[1]=8;				//		   8
-		heapArrayForDeleteMin[2]=10;		//	 10			       11  
+		heapArrayForDeleteMin[1]=8;	//		   8
+		heapArrayForDeleteMin[2]=10;	//	 10		   11   
 		heapArrayForDeleteMin[3]=11;  //     16      21        13      12
 		heapArrayForDeleteMin[4]=16;//     43  23  26  29    31  19  17
 		heapArrayForDeleteMin[5]=21;
