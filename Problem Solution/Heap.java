@@ -132,3 +132,10 @@ public class Heap {
 		array[position2] = temp;
 	}
 }
+
+/**
+Output :
+Insert 12 in heap : 11 17 12 18 21 13 17 43 23 26 29 31 19 
+Heapify at position 1 : 10 16 11 17 21 13 12 43 23 26 29 31 19 
+Delete min in heap : 10 16 11 17 21 13 12 43 23 26 29 31 19 
+*/
