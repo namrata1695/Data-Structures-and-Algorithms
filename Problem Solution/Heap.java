@@ -5,8 +5,8 @@ public class Heap {
 	{
 		int[] heapArray = new int[14];
 		//heap array starts with 1
-		heapArray[1]=11;					//      11
-		heapArray[2]=17;				//   17             13
+		heapArray[1]=11;			//      	11
+		heapArray[2]=17;			//   	17             13
 		heapArray[3]=13;			//  18       21      19    17
 		heapArray[4]=18;			//43  23   26  29   31
 		heapArray[5]=21;		          
@@ -43,8 +43,8 @@ public class Heap {
 		// -----------------------------------------------------------------
 
 		int[] heapArrayForDeleteMin = new int[15];
-		heapArrayForDeleteMin[1]=8;				//		   8
-		heapArrayForDeleteMin[2]=10;		//	 10			       11  
+		heapArrayForDeleteMin[1]=8;	//		   8
+		heapArrayForDeleteMin[2]=10;	//	 10		   11   
 		heapArrayForDeleteMin[3]=11;  //     16      21        13      12
 		heapArrayForDeleteMin[4]=16;//     43  23  26  29    31  19  17
 		heapArrayForDeleteMin[5]=21;
@@ -66,14 +66,14 @@ public class Heap {
 			System.out.print(heapArrayForDeleteMin[i] + " ");
 		}
 	}
-	public void deleteMin(int[] heapArrayForDeleteMin)
+	public void deleteMin(int[] heapArrayForDeleteMin) // Time complexity for delete min is O(logn)
 	{
 		heapArrayForDeleteMin[1] = heapArrayForDeleteMin[heapArrayForDeleteMin.length - 1];
 		heapArrayForDeleteMin[heapArrayForDeleteMin.length - 1] = 0;
 		
 		heapify(1, heapArrayForDeleteMin);
 	}
-	public void heapify(int i, int[] notAheapArray)
+	public void heapify(int i, int[] notAheapArray) // Time complexity for heapify is O(logn)
 	{
 		while(2*i <= notAheapArray.length)
 		{
@@ -132,3 +132,10 @@ public class Heap {
 		array[position2] = temp;
 	}
 }
+
+/**
+Output :
+Insert 12 in heap : 11 17 12 18 21 13 17 43 23 26 29 31 19 
+Heapify at position 1 : 10 16 11 17 21 13 12 43 23 26 29 31 19 
+Delete min in heap : 10 16 11 17 21 13 12 43 23 26 29 31 19 
+*/
