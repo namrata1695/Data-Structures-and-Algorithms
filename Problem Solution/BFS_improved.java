@@ -1,5 +1,6 @@
 /*
 Time complexity : O(M+N) -> linear time complexity
+Adjacency list used for graph representation
 */
 import java.util.HashMap;
 import java.util.LinkedList;
