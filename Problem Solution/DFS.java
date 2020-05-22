@@ -4,6 +4,9 @@ import java.util.LinkedList;
 /*
  Time complexity : O(no. of edges) i.e O(m)
  adjacency list representation of graph
+
+Output : 
+1 2 5 3 4 6 
  */
 public class DFS 
 {
